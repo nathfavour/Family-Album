@@ -2,7 +2,7 @@
 
 # Family Album
 
-Family Album is an app made for collecting memories and sharing it with your relatives. Made by [Jakub](https://github.com/jatanski) and [Gustaw](https://github.com/gustawTanski) for their parents as a Christmas gift.
+Family Album is an app made for collecting memories and sharing it with your relatives.
 
 ## What's in the package?
 
