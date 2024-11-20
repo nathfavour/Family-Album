@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCol, MDBInput, MDBIcon } from 'mdbreact';
-import { PhotoPropsI } from '../../AddPhoto.types';
+import { PhotoToAddPropsI } from '../../AddPhoto.types';
 import { useSelector } from 'react-redux';
 import { AppState } from '../../../../redux/reducers';
 import Loader from '../../../Loader/Loader';
 
-const PhotoToAdd = ({ photo, handleDescInput, handleDateInput, index, deletePhoto, date }: PhotoPropsI) => {
+const PhotoToAdd = ({ photo, handleDescInput, handleDateInput, index, deletePhoto, date }: PhotoToAddPropsI) => {
 	const [showInputDescOrButton, setShowInputDescOrButton] = useState(false);
 	const [showInputDateOrButton, setShowInputDateOrButton] = useState(false);
 
 	const toggleInputDesc = (): void => setShowInputDescOrButton(!showInputDescOrButton);
 	const toggleInputDate = (): void => setShowInputDateOrButton(!showInputDateOrButton);
 
-	const photoToRead: string = URL.createObjectURL(photo);
+	const photoToRead: string = URL.createObjectURL(photo as Blob);
 
 	const indexInString: string = index.toString();
 	const isFetching = useSelector((state: AppState) => state.areUploadImageRequestsStarted.get(index, false));

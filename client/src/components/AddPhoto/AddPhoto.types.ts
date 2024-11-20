@@ -30,11 +30,20 @@ export interface AlbumFormProps {
 }
 
 export interface GalleryPropsI {
+	photos: Blob[];
+	handleDescInput: (index: number, desc: string) => void;
+	handleDateInput: (index: number, date: string) => void;
+	deletePhoto: (index: number) => void;
 	dates: string[];
-	photos: any;
-	handleDescInput: (e: FormEvent<HTMLInputElement>) => void;
-	handleDateInput: (e: FormEvent<HTMLInputElement>) => void;
-	deletePhoto: (e: SyntheticEvent<HTMLButtonElement>) => void;
+}
+
+export interface PhotoToAddPropsI {
+	photo: Blob;
+	index: number;
+	handleDescInput: (index: number, desc: string) => void;
+	handleDateInput: (index: number, date: string) => void;
+	deletePhoto: (index: number) => void;
+	date: string;
 }
 
 export interface PhotoPropsI {

@@ -4,7 +4,7 @@ import { GalleryPropsI } from '../../AddPhoto.types';
 
 const Gallery = ({ photos, handleDescInput, handleDateInput, deletePhoto, dates }: GalleryPropsI) => (
 	<div className="addPhoto__wrapper__photos">
-		{photos.map((photo: HTMLImageElement, i: number) => (
+		{photos.map((photo: Blob, i: number) => (
 			<PhotoToAdd
 				deletePhoto={deletePhoto}
 				handleDescInput={handleDescInput}
