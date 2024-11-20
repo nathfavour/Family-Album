@@ -1,11 +1,6 @@
 import { ReactNode, SyntheticEvent, FormEvent, ChangeEvent } from 'react';
 import { AlbumType } from '../Albums/Album.types';
-import {
-	resetUploadImagesRequest,
-	startUploadImageRequest,
-	endUploadImageRequest,
-	displayUploadImageSuccess,
-} from '../../redux/request/actions';
+
 
 export interface ViewProps {
 	handleFileInput: () => void;
