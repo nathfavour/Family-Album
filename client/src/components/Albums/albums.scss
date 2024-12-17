@@ -1,0 +1,24 @@
+@import '../../scss/abstracts/variables';
+
+.albums {
+	padding: 1vh 2vw;
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+
+		&--el {
+			margin: 2vh 0;
+
+			&--buttons {
+				display: flex;
+			}
+		}
+	}
+	&__addButton {
+		margin: 1vh 1vw 3vh;
+	}
+}
+
+.albumCardBody {
+	background-color: $first-color;
+}

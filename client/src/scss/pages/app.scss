@@ -1,0 +1,31 @@
+@import '../abstracts/variables';
+
+p {
+    color: $primary-color;
+}
+
+body {
+    background-color: $first-color;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.buttonPrimary {
+    background-color: $third-color !important;
+}
+
+.buttonSecondary {
+    background-color: $fifth-color !important;
+}
+
+.buttonThrimary {
+    background-color: $sixth-color !important;
+}
+
+.nav-item.active>.nav-link {
+    background-color: rgba($color: #fff, $alpha: .1) !important;
+}
+
+.react-toast-notifications__container {
+    z-index: 1051 !important;
+}
